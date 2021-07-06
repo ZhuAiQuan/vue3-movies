@@ -2,7 +2,7 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-06-30 16:45:37
- * @LastEditTime: 2021-07-06 16:41:25
+ * @LastEditTime: 2021-07-06 17:40:39
  * @LastEditors: zaq
  * @Reference: 
  */
@@ -19,6 +19,7 @@ const routes: RouteRecordRaw[] = [
     path: '/',
     name: '',
     component: Main,
+    redirect: '/home',
     children: [
       {
         path: 'home',
