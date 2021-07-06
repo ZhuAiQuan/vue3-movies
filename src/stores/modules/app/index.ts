@@ -2,7 +2,7 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-07-01 10:11:57
- * @LastEditTime: 2021-07-01 11:25:54
+ * @LastEditTime: 2021-07-06 17:11:03
  * @LastEditors: zaq
  * @Reference: 
  */
@@ -12,7 +12,7 @@ import getters from './getters'
 import actions from './actions'
 
 export default {
-  namespace: true,
+  namespaced: true,
   state,
   mutations,
   getters,

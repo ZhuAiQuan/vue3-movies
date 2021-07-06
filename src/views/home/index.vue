@@ -2,7 +2,7 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-06-30 16:57:30
- * @LastEditTime: 2021-07-02 17:48:57
+ * @LastEditTime: 2021-07-06 17:25:27
  * @LastEditors: zaq
  * @Reference: 
 -->
@@ -80,8 +80,9 @@ export default defineComponent({
     padding-bottom: 50px;
     &__content {
       .content {
-        min-height: 50vh;
-        padding: 16px;
+        // min-height: 50vh;
+        padding: 0 16px;
+        background: #fff;
         .van-pull-refresh {
           height: 100%;
         }

@@ -2,7 +2,7 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-07-01 09:51:12
- * @LastEditTime: 2021-07-02 16:32:51
+ * @LastEditTime: 2021-07-06 17:02:32
  * @LastEditors: zaq
  * @Reference: 
  */
@@ -31,7 +31,7 @@ export default function UseRequest() {
     })
   }
   onMounted(() => {
-    // getNowGeo()
+    getNowGeo()
   })
 
   return {

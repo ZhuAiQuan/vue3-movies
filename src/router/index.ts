@@ -2,7 +2,7 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-06-30 16:45:37
- * @LastEditTime: 2021-07-01 09:44:09
+ * @LastEditTime: 2021-07-06 16:41:25
  * @LastEditors: zaq
  * @Reference: 
  */
@@ -23,9 +23,30 @@ const routes: RouteRecordRaw[] = [
       {
         path: 'home',
         name: 'home',
-        component: () => import('@/views/home/index.vue')
+        component: () => import('@/views/home/index.vue'),
+      },
+      {
+        path: 'movies/:id',
+        name: 'movies-detail',
+        component: () => import('../views/home/detail/index.vue'),
+        props: (route) => ({
+          id: route.params.id
+        })
       }
     ]
+  },
+  {
+    path: '/movies/:id',
+    name: 'movies-detail',
+    component: () => import('../views/home/detail/index.vue'),
+    props: (route) => ({
+      id: route.params.id
+    })
+  },
+  {
+    path: '/preview',
+    name: 'preview-pic',
+    component: () => import('../views/home/preview/index.vue')
   },
   {
     path: '/404',

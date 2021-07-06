@@ -2,7 +2,7 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-07-01 10:13:43
- * @LastEditTime: 2021-07-01 16:20:35
+ * @LastEditTime: 2021-07-06 16:46:55
  * @LastEditors: zaq
  * @Reference: 
  */
@@ -10,6 +10,7 @@ import type { Geo } from '../../../types'
 export type State = {
   geo: Geo
   k: number
+  photos: string[]
 }
 
 const state: State = {
@@ -19,7 +20,8 @@ const state: State = {
     name: '北京',
     pinyin: 'beijing'
   },
-  k: Math.floor(Math.random() * 10000000)
+  k: Math.floor(Math.random() * 10000000),
+  photos: []
 };
 
 export default state
