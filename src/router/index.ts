@@ -2,7 +2,7 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-06-30 16:45:37
- * @LastEditTime: 2021-07-06 17:40:39
+ * @LastEditTime: 2021-07-07 09:34:28
  * @LastEditors: zaq
  * @Reference: 
  */
@@ -48,6 +48,11 @@ const routes: RouteRecordRaw[] = [
     path: '/preview',
     name: 'preview-pic',
     component: () => import('../views/home/preview/index.vue')
+  },
+  {
+    path: '/message',
+    name: 'message',
+    component: () => import('../views/message/index.vue')
   },
   {
     path: '/404',
