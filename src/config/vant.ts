@@ -2,11 +2,11 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-06-23 13:34:29
- * @LastEditTime: 2021-07-05 16:43:09
+ * @LastEditTime: 2021-07-07 16:35:31
  * @LastEditors: zaq
  * @Reference: 
  */
-import { Button, Image, Icon, Tabbar, TabbarItem, List, Cell, CellGroup, PullRefresh, Tab, Tabs, Skeleton } from 'vant';
+import { Button, Image, Icon, Tabbar, TabbarItem, List, Cell, CellGroup, PullRefresh, Tab, Tabs, Skeleton, Form, Field } from 'vant';
 
 export default [
   Button,
@@ -21,4 +21,6 @@ export default [
   Tab,
   Tabs,
   Skeleton,
+  Form,
+  Field,
 ]
