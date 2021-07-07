@@ -2,7 +2,7 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-07-05 16:51:58
- * @LastEditTime: 2021-07-06 17:29:10
+ * @LastEditTime: 2021-07-07 17:59:56
  * @LastEditors: zaq
  * @Reference: 
 -->
@@ -87,7 +87,7 @@ export default defineComponent({
     function onToggle() {
       toggle.value = !toggle.value;
     }
-    function addScroll(e: Event) {
+    function addScroll(e: any) {
       opactiy.value = e.target?.scrollingElement?.scrollTop;
     }
 
