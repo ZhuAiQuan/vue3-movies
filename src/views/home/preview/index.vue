@@ -2,7 +2,7 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-07-06 16:39:42
- * @LastEditTime: 2021-07-06 17:20:09
+ * @LastEditTime: 2021-07-07 09:14:05
  * @LastEditors: zaq
  * @Reference: 
 -->
@@ -30,12 +30,13 @@ export default defineComponent({
   setup() {
     const store = useStore();
 
-    function onPreview(i: number) {
-      ImagePreview({
-        images: store.state.app.photos,
-        startPosition: i,
-        showIndicators: true
-      })
+    function onPreview(i: number | string | symbol) {
+      if (typeof i === 'number' || typeof i === 'string')
+        ImagePreview({
+          images: store.state.app.photos,
+          startPosition: +i,
+          showIndicators: true
+        })
     }
 
     return {
