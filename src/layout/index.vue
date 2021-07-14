@@ -2,13 +2,15 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-06-30 16:04:13
- * @LastEditTime: 2021-07-01 09:40:51
+ * @LastEditTime: 2021-07-13 15:24:14
  * @LastEditors: zaq
  * @Reference: 
 -->
 <template>
   <div class="container">
-    <router-view></router-view>
+    <transition name="van-fade">
+      <router-view></router-view>
+    </transition>
   </div>
   <van-footer />
 </template>

@@ -2,7 +2,7 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-07-07 11:36:01
- * @LastEditTime: 2021-07-07 16:19:50
+ * @LastEditTime: 2021-07-08 09:05:24
  * @LastEditors: zaq
  * @Reference: 
 -->
@@ -44,9 +44,9 @@ import moviesOrder from "../../assets/images/movies-order.png";
 import goodsOrder from "../../assets/images/goods-order.png";
 import mzq from "../../assets/images/mzq.png";
 import zhhb from "../../assets/images/zhhb.png";
-import ye from "../../assets/images/ye.png";
+import ye from "@/assets/images/ye.png";
 import setting from "../../assets/images/setting.png";
-import { GetToken } from '../../utils/libs'
+import { GetToken } from '@/utils/libs'
 import { useRouter } from "vue-router";
 
 export default defineComponent({

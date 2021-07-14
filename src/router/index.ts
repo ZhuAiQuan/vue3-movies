@@ -2,7 +2,7 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-06-30 16:45:37
- * @LastEditTime: 2021-07-07 16:15:14
+ * @LastEditTime: 2021-07-13 14:40:16
  * @LastEditors: zaq
  * @Reference: 
  */
@@ -30,6 +30,11 @@ const routes: RouteRecordRaw[] = [
         path: 'mine',
         name: 'name',
         component: () => import('../views/mine/index.vue')
+      },
+      {
+        path: 'cinemas',
+        name: 'cinemas',
+        component: () => import('@/views/cinemas/index.vue')
       }
     ]
   },
@@ -60,6 +65,19 @@ const routes: RouteRecordRaw[] = [
     path: '/login',
     name: 'login',
     component: () => import('../views/login/index.vue')
+  },
+  {
+    path: '/location',
+    name: 'location',
+    component: () => import('@/views/location/index.vue')
+  },
+  {
+    path: '/detail/:id',
+    name: 'detail',
+    component: () => import('@/views/cinemas/detail/index.vue'),
+    props: (route) => ({
+      id: route.params.id
+    })
   },
   {
     path: '/404',

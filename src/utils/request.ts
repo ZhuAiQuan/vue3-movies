@@ -2,7 +2,7 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-06-30 14:03:21
- * @LastEditTime: 2021-07-07 17:25:44
+ * @LastEditTime: 2021-07-08 15:01:55
  * @LastEditors: zaq
  * @Reference:
  */
@@ -59,7 +59,7 @@ class Request {
         // 重复请求拦截判断
         const requestKey = `${config.url}/${JSON.stringify(
           config.params
-        )}/${JSON.stringify(config.data)}&request_type=${config.method}`; // map key值
+        )}/${JSON.stringify(config.data)}&request_type=${config.method}/${JSON.stringify(config.headers)}`; // map key值
         if (pendingRequests.has(requestKey)) {
           config.cancelToken = new axios.CancelToken((cancel) => {
             // cancel 函数的参数会作为 promise 的 error 被捕获

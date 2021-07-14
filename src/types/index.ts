@@ -2,7 +2,7 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-07-01 14:23:22
- * @LastEditTime: 2021-07-06 13:36:46
+ * @LastEditTime: 2021-07-14 14:42:17
  * @LastEditors: zaq
  * @Reference: 
  */
@@ -45,4 +45,56 @@ export interface Actors {
   avatarAddress: string;
   name: string;
   role?: Role;
+}
+
+export interface CinemasInfo {
+  address: string
+  cinemaId: number
+  cityId: number
+  cityName: string
+  district: {
+    districtId: number
+    name: string
+  }
+  districtId: number
+  districtName: string
+  eTicketFlag: number
+  gpsAddress: string
+  latitude: number
+  logoUrl: string
+  longitude: number
+  lowPrice: number
+  name: string
+  phone: string
+  telephones: string[]
+  Distance: number
+  businessTime: string
+  isVisited: number
+  notice: string
+  seatFlag: number
+  ticketTypes: TickerTypes[] | null
+  services: Services[]
+}
+interface TickerTypes {
+  id: number
+  name: string
+}
+export interface Services {
+  description: string
+  name: string
+}
+
+export interface Schedules {
+  advanceStopMins: number
+  endAt: number
+  filmLanguage: string
+  hallName: string
+  imagery: string
+  isOnsell: boolean
+  marketPrice: number
+  maxSalePrice: number
+  minSalePrice: number
+  salePrice: number
+  scheduleId: number
+  showAt: number
 }

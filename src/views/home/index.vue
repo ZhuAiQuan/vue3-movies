@@ -2,7 +2,7 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-06-30 16:57:30
- * @LastEditTime: 2021-07-06 17:25:27
+ * @LastEditTime: 2021-07-13 13:14:02
  * @LastEditors: zaq
  * @Reference: 
 -->
@@ -30,7 +30,7 @@ import MoviesList from './components/list.vue'
 export default defineComponent({
   name: "home",
   setup() {
-    const { useInfo } = UseRequest();
+    const { useInfo, getNowGeo } = UseRequest();
     const store = useStore();
     const typeList = reactive({
       list: [
@@ -48,6 +48,7 @@ export default defineComponent({
 
     onMounted(() => {
       // getNowGeo()
+      store.dispatch('user/getGeoDistance')
     });
     watchEffect(() => {
       if (useInfo.cityId && store.state.app.geo.cityId !== useInfo.cityId) {

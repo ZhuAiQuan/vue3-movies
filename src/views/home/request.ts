@@ -2,7 +2,7 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-07-01 09:51:12
- * @LastEditTime: 2021-07-06 17:02:32
+ * @LastEditTime: 2021-07-08 15:00:21
  * @LastEditors: zaq
  * @Reference: 
  */
@@ -18,8 +18,8 @@ export default function UseRequest() {
     pinyin: ''
   })
   // 获取当前位置
-  function getNowGeo() {
-    getGeoLocation().then((res) => {
+  async function getNowGeo() {
+    await getGeoLocation().then((res) => {
       if (!res.data.status) {
         const data = (res.data.data as { city: Geo }).city;
         useInfo.cityId = data.cityId;
@@ -36,5 +36,6 @@ export default function UseRequest() {
 
   return {
     useInfo,
+    getNowGeo
   }
 }
