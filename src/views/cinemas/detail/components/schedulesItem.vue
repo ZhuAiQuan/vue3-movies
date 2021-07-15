@@ -2,12 +2,12 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-07-15 13:49:59
- * @LastEditTime: 2021-07-15 14:37:22
+ * @LastEditTime: 2021-07-15 15:19:04
  * @LastEditors: zaq
  * @Reference: 
 -->
 <template>
-  <div class="schedules-item van-hairline--bottom">
+  <div class="schedules-item van-hairline--bottom" :class="{ 'disabled-item': schedules.showAt * 1000 <= new Date().getTime() }">
     <div class="left">
       <div>
         {{ timeStramp(schedules.showAt) }}
@@ -29,7 +29,8 @@
         {{ schedules.salePrice/100 }}
       </div>
       <div class="buy">
-        购票
+        {{ schedules.showAt * 1000 <= new Date().getTime() ? '停售' : '购票' }}
+        
       </div>
     </div>
   </div>
@@ -109,5 +110,8 @@ export default defineComponent({
     color: #797d82;
     margin-top: 3px;
   }
+}
+.disabled-item {
+  filter: grayscale(10) opacity(.3);
 }
 </style>
