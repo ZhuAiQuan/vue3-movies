@@ -2,7 +2,7 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-07-01 14:23:22
- * @LastEditTime: 2021-07-14 14:42:17
+ * @LastEditTime: 2021-07-15 13:26:05
  * @LastEditors: zaq
  * @Reference: 
  */
@@ -39,12 +39,13 @@ export interface MoviesData {
   synopsis: string;
   timeType: number;
   videoId: number;
+  showDate: number[]
 }
-type Role = '导演';
+type Role = '导演' | string;
 export interface Actors {
   avatarAddress: string;
   name: string;
-  role?: Role;
+  role: Role;
 }
 
 export interface CinemasInfo {
@@ -97,4 +98,21 @@ export interface Schedules {
   salePrice: number
   scheduleId: number
   showAt: number
+}
+
+export interface FilmInfo {
+  filmId: number
+  grade: string
+  category: string
+  runtime: number
+  director: string
+  actors: Actors[]
+  name: string
+  premiereAt: number
+  showDate: number[]
+}
+
+export interface SchedulesTabs {
+  key: number
+  title: string
 }
