@@ -2,7 +2,7 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-07-05 16:56:06
- * @LastEditTime: 2021-07-06 10:15:09
+ * @LastEditTime: 2021-07-15 15:22:18
  * @LastEditors: zaq
  * @Reference: 
  */
@@ -38,6 +38,7 @@ export default function useRequest(id: number | string) {
       synopsis: '',
       timeType: 0,
       videoId: 0,
+      showDate: []
     }
   })
   // 获取信息
