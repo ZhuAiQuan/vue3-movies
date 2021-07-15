@@ -33,9 +33,12 @@ Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 老项目vue2[地址](https://github.com/ZhuAiQuan/vue-maizuo-resoure)
 
 完全重构 代码重写，样式重写，动画效果重写，封装ts axios,统一库管理(这玩意儿其实不用封装，卖座的api都是一样的，封装完全是为后面要项目搭建的)；
+
 axios取消重复请求参考至春神的项目[地址](https://github.com/xlz122/NeteaseCloudMusic/blob/master/src/utils/axios.ts)；
 
 
 # 最后
 
-该项目为个人
+该项目为个人业余兴趣项目，侵删。
+
+鸣谢 [春神](https://github.com/xlz122)
