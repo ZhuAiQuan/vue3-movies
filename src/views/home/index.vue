@@ -2,7 +2,7 @@
  * @Description: xingp，yyds
  * @Author: zaq
  * @Date: 2021-06-30 16:57:30
- * @LastEditTime: 2021-07-13 13:14:02
+ * @LastEditTime: 2021-07-17 09:44:37
  * @LastEditors: zaq
  * @Reference: 
 -->
@@ -25,7 +25,9 @@ import { defineComponent, onMounted, reactive, watchEffect } from "vue";
 import { useStore } from "vuex";
 import UseRequest from "./request";
 import { Dialog } from "vant";
-import MoviesList from './components/list.vue'
+import MoviesList from './components/list.vue';
+
+type FilmsType = InstanceType<typeof MoviesList>
 
 export default defineComponent({
   name: "home",
